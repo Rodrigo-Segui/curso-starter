@@ -1,19 +1,38 @@
 <html lang="en"></html>
     <head>
         <meta charset="UTF-8" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <title>Curso Javascript</title>
         
+        <style>
+            table,th,td {border: 1px solid #000;}
+            th, td {padding: 7px;}
+        </style>
+        
+        <title>TABELAS</title>
     </head>
-    <body >
-        <button class="botao" id="btnCriar" onclick="gerarQuadrado()">Gerar novo</button c>
-        <div id="app">
-            <div class="box" onmouseover="getRandomColor()" ></div>
+    
+    <body>
+        <h1>Tabelas</h1>
+        <table>
 
-        </div>
+            <caption>Cadastro de Clientes</caption>
+            <tr>
+                <th>Nome:</th>
+                <th>Email:</th>
+                <th>Telefone:</th>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>rodrigo@email,com</td>
+                <td>(45) 43545532</td>
+            </tr>
+            <tr>
+                <td>Arthur</td>
+                <td>arthur@email,com</td>
+                <td>(45) 43545532</td>
+            </tr>
+        </table>
+        
 
-        <script src="main.js"></script>
+       
     </body>
 </html>
