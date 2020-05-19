@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+       
+        <script>
+
+            function mostraNome(usuarios){
+                for (let usuario of usuarios) { porque ao invez de
+                   document.write('O '+ usuario.nome + ' possui as habilidades: '+ usuario.habilidades.join(', ') + '<br>');
+
+                }
+            }
+            var usuarios = [
+            {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+            ];
+
+            mostraNome(usuarios)
+        </script>
+    </body>
+</html>
+
+
+
+   
