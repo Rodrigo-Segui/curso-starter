@@ -40,12 +40,16 @@ body {
     color: white;
     line-height: 14px;
     font-weight: 14px;
+    text-align: center;
+
 }
 
 .dashboard p{
     color: white;
     font-size: 25px;
     font-weight: 800;
+    text-align: left;
+    padding-left: 30px;
 }
 
 .dashboard .incomesTotal {
@@ -72,5 +76,93 @@ body {
     flex: 1;
 }
 
+@media (max-width: 600px){
+    .dashboard{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.registration{
+    display: flex;
+    align-items: flex-start;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.register{
+    background: #e8e8e8;
+    margin: 10px;
+    margin-bottom: 60;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.register .head{
+    background: #566472;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.register ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.register ul li{
+    padding: 15px 20px;
+    border-top: #ccc 1px solid;
+}
+
+.register .input{
+    background: #ccc;
+    border-radius: 0px 0px 5px 5px;
+    color: #374a5e;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.register .input input[type=number]{
+    width: 70%;
+    height: 25px;
+    background: none;
+    border: 0;
+    color: #374a5e;
+    -moz-appearance: textfield;
+}
+
+.register .input input[type=submit]{
+    background: #fff;
+    font-family: 'Inter', sans-serif;
+    width: 25%;
+    float: right;
+    border: 0;
+    color: #566472;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+    border-bottom: 2px solid #fff;
+}
 
 
+@media (max-width: 600px){
+    .registration{
+        width: 100%;
+        flex-direction: column;
+    }
+    .register{
+        margin-bottom: 10px;
+    }
+    .register .input input[type=number]{
+        width: 55%;
+    }
+    .register .input input[type=submit]{
+        width: 40%;
+    }
+}
