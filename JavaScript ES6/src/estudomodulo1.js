@@ -1,5 +1,4 @@
 /*classes*/
-
 /*
 class TodoList{
     constructor(){
@@ -18,8 +17,8 @@ document.getElementById('novotodo').onclick = function(){
 }
 */
 
-/*HERANÇA*/
 
+/*HERANÇA*/
 /*
 class List{
     constructor(){
@@ -53,7 +52,6 @@ MinhaLista.mostraUsuario();
 */
 
 /*Metodos estaticos*/
-
 /*
 class Matematica{
     static soma(a,b){
@@ -65,7 +63,6 @@ Matematica.soma(1,2)
 */
 
 /*operacoes com vetores*/
-
 /*
 const arr = [1,3,4,5,7,8,9]
 
@@ -103,12 +100,11 @@ const find = arr.find(function(item){
 
 console.log(find);
 */
-
 /* array functions */
+
 //const newArray3 = arr.map(function(item){
 //    return item * 2;
 //});
-
 /*
 const newArray3 = arr.map(item => item * 2);
 console.log(newArray3);
@@ -119,7 +115,6 @@ const teste2 = (a = 2,d = 2) => a + d;
 
 console.log(teste());
 */
-
 /*
 
 //DESTURUTURACAO
@@ -147,5 +142,84 @@ function mostraNome({nome, idade}){
 }
 mostraNome(usuario)
 */
+
+
 //REST / SPREAD
-"use strict";
+
+//REST
+/*
+const usuario = {
+    nome: "Diego",
+    idade: 23,
+    empresa: 'Rocketseat',
+};
+
+const {nome, ...resto} = usuario;
+console.log(nome);
+console.log(resto);
+
+const arr = [1, 2, 3, 4];
+const [a, b, ...c] = arr;
+console.log(a);
+console.log(b);
+console.log(c);
+
+
+
+function soma(...params){
+    return params.reduce((total,next) => total + next);
+}
+console.log(soma(1,2,4));
+
+//SPREAD
+
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+const arr3 = [...arr1, ...arr2];
+*/
+
+/* 
+// WEBPACK
+
+
+//async await
+/*
+const minhaPromise = () => new Promise((resolve, reject) => {
+    setTimeout(() =>{ resolve('ok')}, 2000);
+});
+
+async function executaPromise(){
+
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+}
+
+
+const executaPromise = async () =>{
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+}
+executaPromise();
+*/
+
+/*AXIOS
+
+import axios from 'axios';
+
+class Api{
+    static async getUserInfo(username){
+        try{
+            const response = await axios.get(`https://api.github.com/users/${username}`);
+            console.log(response);
+
+        }catch(err){
+            console.warn("erro na api");
+        }
+    }
+}
+
+Api.getUserInfo('diego3g');
+
+*/
