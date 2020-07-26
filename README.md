@@ -1,5 +1,5 @@
 <h1 align="center">
-    InfoSeg
+    curso-starter
 </h1>
 
 # curso-starter
